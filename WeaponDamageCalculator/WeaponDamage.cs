@@ -1,7 +1,7 @@
 ﻿using System;
 namespace WeaponDamageCalculator
 {
-    class WeaponDamage
+    abstract class WeaponDamage
     {
         public WeaponDamage(int startingRoll)
         {
@@ -48,10 +48,8 @@ namespace WeaponDamageCalculator
                 CalculateDamage();
             }
         }
-        protected virtual void CalculateDamage()
-        {
-            /* the subclass overrides this*/
-        }
+        protected abstract void CalculateDamage();
+       
 
     }
 }
